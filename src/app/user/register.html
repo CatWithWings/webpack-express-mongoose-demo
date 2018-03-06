@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="rsa_pub" id="rsaPub" content="">
+    <title>注册</title>
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1 user-bg">
+            <div class="pure-g user-from-content">
+                <div class="pure-u-1 logo">
+                    <img src="../../static/img/logo_colorful.png" alt="logo">
+                    <p class="adv">数风流人物 还看今朝</p>
+                </div>
+                <div class="pure-u-1 margin-t-40">
+                    <form class="pure-form" id="loginForm">
+                        <div class="form-item"
+                            name="formItem">
+                            <div class="prefix-input-wapper">
+                                <span class="input-prefix">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input id="email"
+                                    name="email"
+                                    class="pure-input-1 has-prefix"
+                                    type="text" 
+                                    placeholder="请输入邮箱">
+                            </div>
+                            <div name="userErrorSignal"
+                                class="user-error-signal">&nbsp;</div>
+                        </div>
+                        <div class="form-item margin-t-10"
+                            name="formItem">
+                            <div class="prefix-input-wapper">
+                                <span class="input-prefix">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                                <span class="input-postfix use-password-status"
+                                    id="passwordStatus"
+                                    name="statusContainer">
+                                    <i class="fa fa-eye-slash"
+                                        name="invisible"
+                                        title="显示密码"></i>
+                                    <i class="fa fa-eye hidden"
+                                        name="visible"
+                                        title="隐藏密码"></i>
+                                </span>
+                                <input id="password"
+                                    name="password"
+                                    class="pure-input-1 has-prefix has-postfix"
+                                    type="password" 
+                                    placeholder="请输入密码">
+                            </div>
+                            <div name="userErrorSignal"
+                                class="user-error-signal">&nbsp;</div>
+                        </div>
+                        <div class="form-item margin-t-10"
+                            name="formItem">
+                            <div class="prefix-input-wapper">
+                                <span class="input-prefix">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                                <span class="input-postfix use-password-status"
+                                    id="rePasswordStatus"
+                                    name="statusContainer">
+                                    <i class="fa fa-eye-slash"
+                                        name="invisible"
+                                        title="显示密码"></i>
+                                    <i class="fa fa-eye hidden"
+                                        name="visible"
+                                        title="隐藏密码"></i>
+                                </span>
+                                <input id="rePassword"
+                                    name="rePassword"
+                                    class="pure-input-1 has-prefix has-postfix"
+                                    type="password" 
+                                    placeholder="请再次输入密码">
+                            </div>
+                            <div name="userErrorSignal"
+                                class="user-error-signal">&nbsp;</div>
+                        </div>
+                        <div class="form-item margin-t-30">
+                            <button class="pure-button pure-u-1 login-btn"
+                                type="button"
+                                id="register">
+                                注 册
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="pure-u-3-5 margin-t-10">
+                    <p class="error"></p>
+                </div>
+                <a class="display-block pure-u-2-5 margin-t-10 float-r register"
+                    href="/user/login">
+                    已有账户，去登录
+                </a>
+            </div>
+
+            <footer class="main-footer"
+                id="main_footer"></footer>
+        </div>
+    </div>
+
+</body>
+</html>

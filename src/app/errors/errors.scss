@@ -1,0 +1,29 @@
+@import '../theme.scss';
+
+.authentication-bg{
+    background: #f0f2f5;
+    background-image: url(../../static/img/user_bg.svg);
+    width: 100%;
+    min-width: 1300px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    padding: 180px 0 0;
+    position: relative;
+}
+
+.authentication-content{
+    width: 45%;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px - #{$footerHeight});
+
+    .logo{
+        text-align: center;
+    }
+
+    .adv{
+        font-size: 13px;
+        color: #666;
+    }
+}

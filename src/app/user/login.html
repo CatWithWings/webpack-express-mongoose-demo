@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1 user-bg">
+            <div class="pure-g user-from-content">
+                <div class="pure-u-1 logo">
+                    <img src="../../static/img/logo_colorful.png" alt="logo">
+                    <p class="adv">数风流人物 还看今朝</p>
+                </div>
+                <div class="pure-u-1 margin-t-40">
+                    <form class="pure-form" id="loginForm">
+                        <div class="form-item"
+                            name="formItem">
+                            <div class="prefix-input-wapper">
+                                <span class="input-prefix">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input id="email"
+                                    name="email"
+                                    class="pure-input-1 has-prefix"
+                                    type="text" 
+                                    placeholder="请输入邮箱"
+                                    value="admin@163.com">
+                            </div>
+                            <div name="userErrorSignal"
+                                class="user-error-signal">&nbsp;</div>
+                        </div>
+                        <div class="form-item margin-t-10"
+                            name="formItem">
+                            <div class="prefix-input-wapper">
+                                <span class="input-prefix">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                                <input id="password"
+                                    name="password"
+                                    class="pure-input-1 has-prefix"
+                                    type="password" 
+                                    placeholder="请输入密码"
+                                    value="admin163">
+                            </div>
+                            <div name="userErrorSignal"
+                                class="user-error-signal">&nbsp;</div>
+                        </div>
+                    </form>
+                    <form class="pure-form" 
+                        id="loginIdcodeForm" 
+                        onsubmit="return false;">
+                        <div class="form-item margin-t-10"
+                            name="formItem">
+                            <input id="idcode"
+                                name="idcode"
+                                class="pure-input-3-4"
+                                type="text" 
+                                placeholder="请输入验证码">
+                            <p class="pure-u-5-24 icode"
+                                title="看不清换一张">
+                                <span id="idcodeCanvas"></span>
+                            </p>
+                            <div name="userErrorSignal"
+                                class="user-error-signal">&nbsp;</div>
+                        </div>
+                        <div class="form-item margin-t-30">
+                            <button class="pure-button pure-u-1 login-btn"
+                                type="button"
+                                id="login">
+                                登 录
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="pure-u-3-5 margin-t-10">
+                    <p class="error"></p>
+                </div>
+                <a class="display-block pure-u-2-5 margin-t-10 float-r register"
+                    href="/user/register">
+                    注册账户
+                </a>
+            </div>
+
+            <footer class="main-footer"
+                id="main_footer"></footer>
+        </div>
+    </div>
+</body>
+</html>
